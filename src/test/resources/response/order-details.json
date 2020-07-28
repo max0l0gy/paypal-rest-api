@@ -1,0 +1,134 @@
+{
+  "id": "2CV55440UT6646827",
+  "intent": "CAPTURE",
+  "purchase_units": [
+    {
+      "reference_id": "default",
+      "amount": {
+        "currency_code": "USD",
+        "value": "1.00",
+        "breakdown": {
+          "item_total": {
+            "currency_code": "USD",
+            "value": "1.00"
+          },
+          "shipping": {
+            "currency_code": "USD",
+            "value": "0.00"
+          },
+          "handling": {
+            "currency_code": "USD",
+            "value": "0.00"
+          },
+          "insurance": {
+            "currency_code": "USD",
+            "value": "0.00"
+          },
+          "shipping_discount": {
+            "currency_code": "USD",
+            "value": "0.00"
+          },
+          "discount": {
+            "currency_code": "USD",
+            "value": "0.00"
+          }
+        }
+      },
+      "payee": {
+        "email_address": "sb-qoigr376541@business.example.com",
+        "merchant_id": "9WBNM9XLR6PZS"
+      },
+      "description": "titsonfire.store Payment for order #401 ",
+      "shipping": {
+        "name": {
+          "full_name": "test buyer"
+        },
+        "address": {
+          "address_line_1": "улица Первая, дом 1, квартира 2",
+          "admin_area_2": "Москва",
+          "admin_area_1": "Москва",
+          "postal_code": "127001",
+          "country_code": "RU"
+        }
+      },
+      "payments": {
+        "captures": [
+          {
+            "id": "85W962518S850170V",
+            "status": "COMPLETED",
+            "amount": {
+              "currency_code": "USD",
+              "value": "1.00"
+            },
+            "final_capture": true,
+            "seller_protection": {
+              "status": "ELIGIBLE",
+              "dispute_categories": [
+                "ITEM_NOT_RECEIVED",
+                "UNAUTHORIZED_TRANSACTION"
+              ]
+            },
+            "seller_receivable_breakdown": {
+              "gross_amount": {
+                "currency_code": "USD",
+                "value": "1.00"
+              },
+              "paypal_fee": {
+                "currency_code": "USD",
+                "value": "0.34"
+              },
+              "net_amount": {
+                "currency_code": "USD",
+                "value": "0.66"
+              }
+            },
+            "links": [
+              {
+                "href": "https://api.sandbox.paypal.com/v2/payments/captures/85W962518S850170V",
+                "rel": "self",
+                "method": "GET"
+              },
+              {
+                "href": "https://api.sandbox.paypal.com/v2/payments/captures/85W962518S850170V/refund",
+                "rel": "refund",
+                "method": "POST"
+              },
+              {
+                "href": "https://api.sandbox.paypal.com/v2/checkout/orders/2CV55440UT6646827",
+                "rel": "up",
+                "method": "GET"
+              }
+            ],
+            "create_time": "2020-05-16T16:29:27Z",
+            "update_time": "2020-05-16T16:29:27Z"
+          }
+        ]
+      }
+    }
+  ],
+  "payer": {
+    "name": {
+      "given_name": "test",
+      "surname": "buyer"
+    },
+    "email_address": "maxmorev-buyer@gmail.com",
+    "payer_id": "7P9FUMWVUC6Z6",
+    "phone": {
+      "phone_number": {
+        "national_number": "9393466803"
+      }
+    },
+    "address": {
+      "country_code": "RU"
+    }
+  },
+  "update_time": "2020-05-16T16:29:27Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v2/checkout/orders/2CV55440UT664* Connection #",
+      "rel": "self",
+      "method": "GET"
+    }
+  ],
+  "status": "COMPLETED"
+}

@@ -52,6 +52,10 @@
       <version>1.18.12</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-cache</artifactId>
+    </dependency>
 
     <!-- TEST -->
     <dependency>

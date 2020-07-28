@@ -6,15 +6,16 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.SneakyThrows;
 
+import java.util.List;
+
 @Getter
 @Setter
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = false)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Token extends DomainJson {
-    public int expires_in;
-    public String access_token;
+public class Payments extends DomainJson {
+    List<Capture> captures;
     @SneakyThrows
-    public static Token fromJsonString(String json){
-        return MAPPER.readValue(json, Token.class);
+    public static Payments fromJsonString(String json) {
+        return MAPPER.readValue(json, Payments.class);
     }
 }

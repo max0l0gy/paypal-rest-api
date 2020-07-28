@@ -8,13 +8,14 @@ import lombok.SneakyThrows;
 
 @Getter
 @Setter
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = false)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Token extends DomainJson {
-    public int expires_in;
-    public String access_token;
+public class RefundResponse extends DomainJson {
+    private String id;
+    private RefundStatus status;
+
     @SneakyThrows
-    public static Token fromJsonString(String json){
-        return MAPPER.readValue(json, Token.class);
+    public static RefundResponse fromJsonString(String json) {
+        return MAPPER.readValue(json, RefundResponse.class);
     }
 }

@@ -1,0 +1,16 @@
+{
+  "id": "020541522E438902X",
+  "status": "COMPLETED",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v2/payments/refunds/020541522E438902X",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v2/payments/captures/85W962518S850170V",
+      "rel": "up",
+      "method": "GET"
+    }
+  ]
+}
