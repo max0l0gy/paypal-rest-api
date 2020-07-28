@@ -1,4 +1,4 @@
-## PayPal-rest-api project
+## Quarkus PayPal-rest-api project
 #### PAYPAL Rest API micro
 #### TDD, CACHE
 ### PayPal API
