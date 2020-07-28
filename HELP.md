@@ -1,4 +1,4 @@
-###PayPal API
+### PayPal API
 Auth
 ````
 curl -v https://api.sandbox.paypal.com/v1/oauth2/token \
@@ -7,7 +7,7 @@ curl -v https://api.sandbox.paypal.com/v1/oauth2/token \
 -u "AZLBDto98XnkWuOsGr78XH78ohzsHneaQY9vzVdWu9w5xSKRhv1HQl2KSCBvtIDoEEQpXzLcCvJ8d9BG:EN-cucIq8ETHYA_bFHqVPi2BJ8DhwFQGledPVS370xSucGJi9d64dvozQeQosj6uO8Q6gu6yDwmHvnnt" \
 -d "grant_type=client_credentials"
 ````
-####GET ORDER DETAILS
+#### GET ORDER DETAILS
 
 /v2/checkout/orders/{id}
 ````
@@ -85,7 +85,7 @@ Content-Type: application/json
 }
 
 ````
-####REFUND
+#### REFUND
 PayPal API
 ````
 curl -v -X POST https://api.sandbox.paypal.com/v2/payments/captures/85W962518S850170V/refund \
