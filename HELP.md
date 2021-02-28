@@ -129,10 +129,11 @@ maxmorev/paypal-rest-api
 ````
 
 ### Prepare secrets 
-Encode string to base64 and save it in github secrets, then save it in k8s secrets
+You can, of course, provide the clear text content using the stringData for Secret creation
+https://kubernetes.io/docs/concepts/configuration/secret/#basic-authentication-secret
 ```
-echo $PAYPAL_SECRET | base64
-echo $PAYPAL_CLIENT_ID | base64
+echo $PAYPAL_SECRET
+echo $PAYPAL_CLIENT_ID
 ```
 
 

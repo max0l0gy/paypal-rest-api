@@ -50,7 +50,7 @@ jobs:
 
       - name: Update deployment file
         run: TAG=0.0.$(echo ${{ github.run_number }} | head -c7) && sed -i 's|${{env.APP_DOCKER_REPO}}:latest|${{env.APP_DOCKER_REPO}}:'${TAG}'|' $GITHUB_WORKSPACE/k8s-deployment.yaml
-#      UPDATE SECRETS
+#      UPDATE SECRETS with clear Strings https://kubernetes.io/docs/concepts/configuration/secret/#basic-authentication-secret
       - name: Update k8s-secrets PAYPAL_CLIENT_ID
         run: sed -i 's|{PAYPAL_CLIENT_ID}|${{secrets.PAYPAL_CLIENT_ID}}|' $GITHUB_WORKSPACE/k8s-secrets.yaml
       - name: Update k8s-secrets PAYPAL_SECRET
