@@ -107,6 +107,12 @@
     <orderEntry type="library" name="Maven: com.github.ben-manes.caffeine:caffeine:2.8.4" level="project" />
     <orderEntry type="library" name="Maven: com.google.errorprone:error_prone_annotations:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.microprofile.context-propagation:microprofile-context-propagation-api:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: io.quarkus:quarkus-smallrye-health:1.5.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.smallrye:smallrye-health:2.2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.microprofile.health:microprofile-health-api:2.2" level="project" />
+    <orderEntry type="library" name="Maven: io.smallrye:smallrye-health-extension-api:2.2.1" level="project" />
+    <orderEntry type="library" name="Maven: io.quarkus:quarkus-jsonp:1.5.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish:jakarta.json:1.1.6" level="project" />
     <orderEntry type="library" name="Maven: io.quarkus:quarkus-junit5-mockito:1.5.0.Final" level="project" />
     <orderEntry type="library" name="Maven: io.quarkus:quarkus-arc-deployment:1.5.0.Final" level="project" />
     <orderEntry type="library" name="Maven: io.quarkus:quarkus-core-deployment:1.5.0.Final" level="project" />
@@ -158,8 +164,6 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.eclipse.sisu:org.eclipse.sisu.inject:0.3.4" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.quarkus:quarkus-test-common:1.5.1.Final" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.quarkus:quarkus-jsonp-deployment:1.5.1.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: io.quarkus:quarkus-jsonp:1.5.1.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.glassfish:jakarta.json:1.1.6" level="project" />
     <orderEntry type="library" name="Maven: org.jboss:jandex:2.1.3.Final" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter:5.6.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-api:5.6.2" level="project" />

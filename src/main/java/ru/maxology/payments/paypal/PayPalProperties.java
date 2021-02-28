@@ -17,6 +17,7 @@ public class PayPalProperties {
         return "Basic " +
                 Base64.getEncoder().encodeToString((clientId + ":" + secret).getBytes());
     }
+
     public String getAuthorization(Token token) {
         return "Bearer " + token.access_token;
     }
