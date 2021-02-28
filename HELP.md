@@ -106,3 +106,33 @@ Content-Type: application/json
 }
 
 ````
+## Build
+````
+./mvnw package
+````
+## Docker
+Install
+
+https://docs.docker.com/engine/install/centos/
+
+Build
+````
+docker build -t maxmorev/paypal-rest-api .
+````
+Run
+````
+docker run -i --rm -p 8080:8080 \
+-e PAYPAL_CLIENT_ID=$PAYPAL_CLIENT_ID \
+-e PAYPAL_SECRET=$PAYPAL_SECRET \
+--name paypal-rest-api \
+maxmorev/paypal-rest-api
+````
+
+### Prepare secrets 
+Encode string to base64 and save it in github secrets, then save it in k8s secrets
+```
+echo $PAYPAL_SECRET | base64
+echo $PAYPAL_CLIENT_ID | base64
+```
+
+
