@@ -94,7 +94,7 @@ curl -v -X POST https://api.sandbox.paypal.com/v2/payments/captures/85W962518S85
 ````
 API
 ````
-http POST http://localhost:8080/capture/refund/4CE915409W2428342
+http POST http://localhost:8080/v1/capture/refund/4CE915409W2428342
 
 HTTP/1.1 200 OK
 Content-Length: 47
